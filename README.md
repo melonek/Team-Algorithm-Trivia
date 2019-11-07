@@ -1,4 +1,4 @@
-80's synth themed TRIVIA GAME:
+TRIVIA GAME:
 
 The following project involved the use of html5, css3, jquery
 and bootstrap for astheatic and pleasant look to the website.
@@ -27,4 +27,4 @@ The main components or elements of the project are:
 
 Thank you for your time to play the game. Hope you enjoy it!
 
-Piotr
+Team Algorithm
