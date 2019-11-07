@@ -1,0 +1,171 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../images/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  top: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -999;
+  transform: translate(-50%, -50%);
+}
+
+#questionBox {
+  width: 80%;
+  margin: 50px auto;
+  opacity: 0.7;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+.jumbotron-fluid {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+}
+#banner {
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  animation: glowing 1s infinite alternate;
+}
+#row1 {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 80px;
+}
+
+#row2.row-fluid {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  margin: 200px auto;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+#quizStart {
+  background-image: linear-gradient(rgb(210, 63, 247), rgb(33, 6, 82));
+  animation: glow 1s infinite alternate;
+  color: rgb(32, 204, 226);
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  padding: 5px;
+}
+
+#timer {
+  font-size: 20px;
+  border: solid black 2px;
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+  margin: 20px auto;
+  background-color: gray;
+  color: white;
+}
+
+.btn-secondary {
+  width: 200px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+}
+
+#question {
+  height: auto;
+  width: auto;
+  background: white;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Acme", sans-serif;
+  font-size: 28px;
+}
+#correct-answer {
+  color: green;
+  margin-top: 20px;
+}
+
+#results {
+  margin-top: 0;
+}
+
+.progress-bar {
+  text-align: center;
+  margin: 10px auto;
+  min-height: 100px;
+}
+
+.progress-bar > img {
+  text-align: center;
+  margin: 10px auto;
+  min-height: 100px;
+}
+
+img {
+  width: 300px;
+  padding: 10px;
+}
+
+#answer-buttons > button {
+  padding: 10px;
+  margin: 10px;
+  background: lightgray;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+#answer-buttons > button:hover {
+  background: #222222;
+  color: white;
+  border: 3px solid white;
+}
+#text {
+  font-size: 30px;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 3px -2px #48f1d5;
+  }
+  to {
+    box-shadow: 0 0 4px 2px #34e9bc;
+  }
+}
+
+@keyframes glowing {
+  from {
+    box-shadow: 0 0 3px -3px #da4cec;
+  }
+  to {
+    box-shadow: 0 0 3px 4px #be22ee;
+  }
+}
