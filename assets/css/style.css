@@ -74,9 +74,9 @@ body {
 }
 
 #quizStart {
-  background-image: linear-gradient(rgb(210, 63, 247), rgb(33, 6, 82));
+  background-image: linear-gradient(rgb(23, 201, 255), rgb(31, 52, 243));
   animation: glow 1s infinite alternate;
-  color: rgb(32, 204, 226);
+  color: rgb(255, 255, 255);
   font-family: "Teko", sans-serif;
   font-size: 40px;
   padding: 5px;
