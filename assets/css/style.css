@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/miniature.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -17,7 +17,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   body {
-    background: url("../images/background.jpg") no-repeat center center fixed;
+    background: url("../images/miniature.gif") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -64,22 +64,24 @@ body {
 
 #row2.row-fluid {
   width: 100%;
-  height: 150px;
+  height: 10px;
   position: fixed;
-  margin: 200px auto;
+  margin: 250px auto;
   padding: 10px 0;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
   display: flex;
 }
 
 #quizStart {
-  background-image: linear-gradient(rgb(23, 201, 255), rgb(31, 52, 243));
+  background-image: linear-gradient(rgb(199, 222, 230), rgb(88, 92, 121));
   animation: glow 1s infinite alternate;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: "Teko", sans-serif;
   font-size: 40px;
   padding: 5px;
+  border: none;
 }
 
 #timer {
@@ -154,18 +156,18 @@ img {
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 3px -2px #48f1d5;
+    box-shadow: 0 0 3px -2px #b9100a;
   }
   to {
-    box-shadow: 0 0 4px 2px #34e9bc;
+    box-shadow: 0 0 4px 2px #b9100a;
   }
 }
 
 @keyframes glowing {
   from {
-    box-shadow: 0 0 3px -3px #da4cec;
+    box-shadow: 0 0 3px -3px #e9971d;
   }
   to {
-    box-shadow: 0 0 3px 4px #be22ee;
+    box-shadow: 0 0 3px 4px #e9971d;
   }
 }
